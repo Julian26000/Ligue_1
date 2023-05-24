@@ -1,14 +1,14 @@
 <?php
 
 class Club {
-    private int $id_club;
-    private string $nom_club;
-    private mixed $id_stade;
-    private string $ville_club;
-    private string $logo_club;
-    private mixed $annee_club;
-    private string $president_club;
-    private string $entraineur_club;
+    private int $id_club; // Identifiant du club
+    private string $nom_club; // Nom du club
+    private mixed $id_stade; // Identifiant du stade
+    private string $ville_club; // Ville du club
+    private string $logo_club; // Logo du club
+    private mixed $annee_club; // Année du club
+    private string $president_club; // Président du club
+    private string $entraineur_club; // Entraîneur du club
 
     public function __construct(int $id_club, string $nom_club, mixed $id_stade, string $ville_club, string $logo_club, mixed $annee_club, string $president_club, string $entraineur_club)
     {
@@ -21,8 +21,6 @@ class Club {
         $this->president_club = $president_club;
         $this->entraineur_club = $entraineur_club;
     }
-
-
 
     /**
      * Get the value of id_club
@@ -63,7 +61,7 @@ class Club {
     /**
      * Get the value of id_stade
      */
-    public function getIdStade(): int
+    public function getIdStade(): mixed
     {
         return $this->id_stade;
     }
@@ -77,7 +75,6 @@ class Club {
 
         return $this;
     }
-
 
     /**
      * Get the value of ville_club

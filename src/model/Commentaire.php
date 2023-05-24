@@ -1,11 +1,10 @@
 <?php
 
-Class Commentaire {
-    private int $id_commentaire;
-    private string $text_commentaire;
-    private string $id_article;
-    private int $id_uti;
-
+class Commentaire {
+    private int $id_commentaire; // Identifiant du commentaire
+    private string $text_commentaire; // Contenu du commentaire
+    private string $id_article; // Identifiant de l'article associé
+    private int $id_uti; // Identifiant de l'utilisateur associé
 
     public function __construct($id_commentaire, $text_commentaire, $id_article, $id_uti)
     {
@@ -14,7 +13,6 @@ Class Commentaire {
         $this->id_uti = $id_uti;
         $this->id_article = $id_article;
     }
-
 
     /**
      * Get the value of text_commentaire

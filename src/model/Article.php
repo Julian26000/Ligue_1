@@ -1,11 +1,11 @@
 <?php
 
 class Article {
-    private int $id_article;
-    private string $titre_article;
-    private string $content_article;
-    private int $id_uti;
-    private string $image_article;
+    private int $id_article; // Identifiant de l'article
+    private string $titre_article; // Titre de l'article
+    private string $content_article; // Contenu de l'article
+    private int $id_uti; // Identifiant de l'utilisateur associé à l'article
+    private string $image_article; // Image de l'article
 
     public function __construct($id_article, $titre_article, $content_article, $id_uti, $image_article)
     {
@@ -15,7 +15,6 @@ class Article {
         $this->image_article = $image_article;
         $this->id_uti = $id_uti;
     }
-
 
     /**
      * Get the value of id_article

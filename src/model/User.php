@@ -1,16 +1,16 @@
 <?php
 
 class User {
-    private mixed $id_uti;
-    private int $id_club;
-    private string $nom_uti;
-    private string $prenom_uti;
-    private string $sexe_uti;
-    private string $password_uti;
-    private mixed $date_inscription;
-    private string $image_uti;
-    private string $mail_uti;
-    private bool $admin_uti;
+    private mixed $id_uti; // ID de l'utilisateur
+    private int $id_club; // ID du club favori de l'utilisateur
+    private string $nom_uti; // Nom de l'utilisateur
+    private string $prenom_uti; // Prénom de l'utilisateur
+    private string $sexe_uti; // Sexe de l'utilisateur
+    private string $password_uti; // Mot de passe de l'utilisateur
+    private mixed $date_inscription; // Date d'inscription de l'utilisateur
+    private string $image_uti; // Chemin de l'image de profil de l'utilisateur
+    private string $mail_uti; // Adresse e-mail de l'utilisateur
+    private bool $admin_uti; // Indicateur si l'utilisateur est un administrateur ou non
 
     function __construct(mixed $id_uti, int $id_club, string $nom_uti, string $prenom_uti, string $sexe_uti, string $password_uti, mixed $date_inscription, string $image_uti, string $mail_uti, bool $admin_uti) {
         $this->id_uti = $id_uti;
@@ -23,7 +23,6 @@ class User {
         $this->image_uti = $image_uti;
         $this->mail_uti = $mail_uti;
         $this->admin_uti = $admin_uti;
-
     }
 
     /**
@@ -40,7 +39,6 @@ class User {
     public function setIdClub(int $id_club): self
     {
         $this->id_club = $id_club;
-
         return $this;
     }
 
@@ -58,7 +56,6 @@ class User {
     public function setNomUti(string $nom_uti): self
     {
         $this->nom_uti = $nom_uti;
-
         return $this;
     }
 
@@ -76,7 +73,6 @@ class User {
     public function setPrenomUti(string $prenom_uti): self
     {
         $this->prenom_uti = $prenom_uti;
-
         return $this;
     }
 
@@ -94,7 +90,6 @@ class User {
     public function setSexeUti(string $sexe_uti): self
     {
         $this->sexe_uti = $sexe_uti;
-
         return $this;
     }
 
@@ -112,7 +107,6 @@ class User {
     public function setPasswordUti(string $password_uti): self
     {
         $this->password_uti = $password_uti;
-
         return $this;
     }
 
@@ -130,7 +124,6 @@ class User {
     public function setDateInscription(mixed $date_inscription): self
     {
         $this->date_inscription = $date_inscription;
-
         return $this;
     }
 
@@ -148,7 +141,6 @@ class User {
     public function setImageUti(string $image_uti): self
     {
         $this->image_uti = $image_uti;
-
         return $this;
     }
 
@@ -166,7 +158,6 @@ class User {
     public function setMailUti(string $mail_uti): self
     {
         $this->mail_uti = $mail_uti;
-
         return $this;
     }
 
@@ -184,7 +175,6 @@ class User {
     public function setAdminUti(bool $admin_uti): self
     {
         $this->admin_uti = $admin_uti;
-
         return $this;
     }
 
@@ -202,8 +192,6 @@ class User {
     public function setIdUti(mixed $id_uti): self
     {
         $this->id_uti = $id_uti;
-
         return $this;
     }
-    }
-    
+}

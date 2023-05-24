@@ -1,18 +1,18 @@
 <?php
 
 class Classement {
-    public $id_championnat;
-    public $id_club;
-    public $nom_club;
-    public $nb_points;
-    public $nb_buts_marques;
-    public $nb_buts_encaisse;
-    public $nb_match_joue;
-    public $nb_match_gagne;
-    public $nb_match_nul;
-    public $nb_match_perdu;
-    public $logo;
-    
+    public $id_championnat; // Identifiant du championnat
+    public $id_club; // Identifiant du club
+    public $nom_club; // Nom du club
+    public $nb_points; // Nombre de points
+    public $nb_buts_marques; // Nombre de buts marqués
+    public $nb_buts_encaisse; // Nombre de buts encaissés
+    public $nb_match_joue; // Nombre de matchs joués
+    public $nb_match_gagne; // Nombre de matchs gagnés
+    public $nb_match_nul; // Nombre de matchs nuls
+    public $nb_match_perdu; // Nombre de matchs perdus
+    public $logo; // Logo du club
+
     public function __construct($id_championnat, $id_club, $nom_club, $nb_points, $nb_buts_marques, $nb_buts_encaisse, $nb_match_joue, $nb_match_gagne, $nb_match_nul, $nb_match_perdu, $logo) {
         $this->id_championnat = $id_championnat;
         $this->id_club = $id_club;
@@ -26,8 +26,6 @@ class Classement {
         $this->nb_match_perdu = $nb_match_perdu;
         $this->logo = $logo;
     }
-
-    
 
     /**
      * Get the value of id_championnat
@@ -227,4 +225,3 @@ class Classement {
         return $this;
     }
 }
-

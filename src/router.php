@@ -1,9 +1,8 @@
 <?php
 
-include('./src/model/GestionBDD.php');
-include('./src/model/GestionArticle.php');
-include('./src/model/Article.php');
-
+include('./src/model/GestionBDD.php'); // Inclusion du fichier GestionBDD.php
+include('./src/model/GestionArticle.php'); // Inclusion du fichier GestionArticle.php
+include('./src/model/Article.php'); // Inclusion du fichier Article.php
 
 function to404() {
     require __DIR__ . '/views/404.php';

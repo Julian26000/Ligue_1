@@ -68,7 +68,7 @@ if (isset($_POST['newarticle'])) {
                 </div>
             </div>
             <div class="w-[50%] flex flex-col justify-self-end">
-                <label class="label">Image (optionnel)</label>
+                <label class="label">Image</label>
                 <div class="file is-info">
                     <label class="file-label">
                         <input class="file-input" type="file" name="image" accept=".png, .jpg, .jpeg">
@@ -77,7 +77,7 @@ if (isset($_POST['newarticle'])) {
                                 <i class="fas fa-upload"></i>
                             </span>
                             <span class="file-label">
-                                Choose a file…
+                                Choisir un fichier
                             </span>
                         </span>
                     </label>

@@ -3,7 +3,7 @@
         <div class="flex flex-cols place-content-between">
             <div class="w-[70%]">
                 <h2 class="text-xl font-bold"> <?php echo $saison->getNomClub() ?></h2>
-                <p>Rank: <?php echo $rank ?></p>
+                <p>Rang : <?php echo $rank ?></p>
             </div>
         </div>
     </section>
@@ -11,7 +11,7 @@
         <div class="flex flex-col justify-center">
             <p>But marqués <?php echo $saison->getNbButsMarques() ?></p>
             <p>But encaissés <?php echo $saison->getNbButsEncaisse() ?></p>
-            <p>nb points <?php echo $saison->getNbPoints() ?></p>
+            <p>Nombre de points <?php echo $saison->getNbPoints() ?></p>
         </div>
     </section>
 </a>

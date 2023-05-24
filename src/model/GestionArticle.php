@@ -1,12 +1,16 @@
 <?php
 Class GestionArticle {
-    private PDO $cnx;
+    private PDO $cnx; // Connexion à la base de données
 
     public function __construct(PDO $cnx)
     {
         $this->cnx = $cnx;
     }
 
+    /**
+     * Récupère la liste des articles de la base de données
+     * @return array Liste des articles
+     */
     public function getListArticle(): array
     {
         $res = $this->cnx->query("select * from article");
@@ -17,7 +21,12 @@ Class GestionArticle {
         return $tableResult;
     }
 
-    public function getArticlesByName($name): Article
+    /**
+     * Récupère un article en fonction de son nom
+     * @param string $name Nom de l'article
+     * @return Article|null Article correspondant ou null si aucun article trouvé
+     */
+    public function getArticlesByName($name): ?Article
     {
         $res = $this->cnx->query("select * from article where titre_article =" . $name);
         $theArticle = null;
@@ -28,7 +37,12 @@ Class GestionArticle {
         return $theArticle;
     }
 
-    public function getArticlesById($id)
+    /**
+     * Récupère un article en fonction de son identifiant
+     * @param int $id Identifiant de l'article
+     * @return Article|null Article correspondant ou null si aucun article trouvé
+     */
+    public function getArticlesById($id): ?Article
     {
         $this->cnx->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $res = $this->cnx->query("select * from article where id_article =" . $id);
@@ -40,7 +54,13 @@ Class GestionArticle {
         return $theArticle;
     }
 
-    function newArticle(Article $article) {
+    /**
+     * Crée un nouvel article dans la base de données
+     * @param Article $article Nouvel article à créer
+     * @return object Résultat de l'opération (contient le message de statut et le style)
+     */
+    function newArticle(Article $article)
+    {
         $idauteur = $article->getId_uti();
         $title = $article->getTitre_article();
         $content = $article->getContent_article();

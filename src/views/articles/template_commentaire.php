@@ -8,7 +8,7 @@
     </section>
     <section class="flex items-center border-l-2 border-slate-700 pl-2">
         <div class="flex flex-col justify-center">
-            <h2>Author: <?php echo $userController->get_user_byid($commentaire->getId_uti())->getNomUti() ?> </h2>
+            <h2>Auteur : <?php echo $userController->get_user_byid($commentaire->getId_uti())->getNomUti() ?> </h2>
         </div>
     </section>
 </div>

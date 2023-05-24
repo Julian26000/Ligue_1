@@ -3,7 +3,7 @@
     <div class="w-full h-full flex justify-center absolute z-10">
         <section class="w-[60%] h-full">
             <div class="pb-10 pt-5 bg-white shadow-2xl shadow-slate-800 px-5">
-            <h1 class="text-3xl pt-20 font-bold mb-10">Classement saison</h1>
+            <h1 class="text-3xl pt-20 font-bold mb-10">Classement de saison</h1>
 
                 <?php 
 
